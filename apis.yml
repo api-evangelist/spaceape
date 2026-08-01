@@ -1,8 +1,25 @@
 aid: spaceape
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spaceape.png
 name: Spaceape
-description: 'Spaceape is a company surfaced as a portfolio company of northzone and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Space Ape Games is a London-based mobile game developer, founded in 2012, that
+  became part of Supercell after Supercell took a majority stake in 2017 and fully acquired the studio.
+  As a consumer mobile-gaming studio it ships player-facing game titles rather than a developer platform:
+  as of this enrichment pass the former company site spaceapegames.com returns an HTTP 302 redirect to
+  supercell.com, and no public developer API, developer portal, or API documentation is published for
+  Space Ape Games or its parent Supercell (Supercell references only a Developer Grants Program, not an
+  API). This profile was surfaced as a northzone portfolio company and added to the API Evangelist network
+  as a lead; it currently exposes no API surface to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/spaceape/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Gaming
+- Mobile Games
+- Video Games
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +46,9 @@ maintainers:
 common:
 - type: Website
   url: http://spaceapegames.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: 'spaceapegames.com 302-redirects to supercell.com; consumer mobile-game studio with no public API surface.'
